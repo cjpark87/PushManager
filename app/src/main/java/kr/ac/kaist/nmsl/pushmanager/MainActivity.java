@@ -37,6 +37,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.ActivityRecognition;
 
 import kr.ac.kaist.nmsl.pushmanager.activity.ActivityRecognitionIntentService;
+import kr.ac.kaist.nmsl.pushmanager.activity.StepCounterService;
 import kr.ac.kaist.nmsl.pushmanager.ble.BLEService;
 import kr.ac.kaist.nmsl.pushmanager.audio.AudioProcessorService;
 import kr.ac.kaist.nmsl.pushmanager.defer.DeferService;
@@ -102,6 +103,7 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
         }
 
         context.startService(new Intent(context, NotificationService.class));
+        context.startService(new Intent(context, StepCounterService.class));
 
         //Google API Client
         mGoogleApiClient = new GoogleApiClient.Builder(this)
