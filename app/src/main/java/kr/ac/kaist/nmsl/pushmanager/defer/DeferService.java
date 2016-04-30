@@ -47,7 +47,7 @@ public class DeferService extends Service {
         Log.d(Constants.DEBUG_TAG, "Defer duration: " + duration);
 
         mTimer = new Timer();
-            mTimer.scheduleAtFixedRate(new TimerTask() {
+        mTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 if (mNotificationCount > 0) {

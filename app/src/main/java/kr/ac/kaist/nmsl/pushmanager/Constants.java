@@ -51,4 +51,7 @@ public class Constants {
     public static final String BLUETOOTH_DISABLED = "bt_disabled";
     public static final String BLUETOOTH_LE_BEACON = "ble_beacon";
 
+    public static final double AUDIO_SILENCE_SPL = -70.0;
+    public static final double AUDIO_SAMPLING_DURATION = 0.1;
+    public static final int AUDIO_SAMPLING_PERIOD = 1;
 }
